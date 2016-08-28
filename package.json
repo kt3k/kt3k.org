@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "dependencies": {
-    "font-awesome": "^4.6.3"
-  },
   "devDependencies": {
     "font-awesome": "^4.6.3"
   },
