@@ -1,7 +1,8 @@
-addEventListener('fetch', (event) => {
+addEventListener("fetch", (event) => {
   const { pathname } = new URL(event.request.url);
+  console.log(pathname);
   switch (pathname) {
-    case '/':
+    case "/":
       event.respondWith(new Response(homepage));
       break;
     default:
@@ -64,7 +65,7 @@ body {
 
 <hr>
 <p>© 2021 Yoshiya Hinosawa
-`
+`;
 
 const notFound = `
 <title>kt3k.org</title>
@@ -74,4 +75,4 @@ const notFound = `
 <h1>Not Found</h1>
 <a href="https://kt3k.org/"><img width="150" src="https://kt3k.github.io/kt3k.org/sheep.png" /></a>
 <a href="/">Back</A>
-`
+`;
