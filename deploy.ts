@@ -1,7 +1,20 @@
+addEventListener('fetch', (event) => {
+  const { pathname } = new URL(event.request.url);
+  switch (pathname) {
+    case '/':
+      event.respondWith(new Response(homepage));
+      break;
+    default:
+      event.respondWith(new Response(notFound));
+      break;
+  }
+});
+
+const homepage = `
 <title>kt3k.org</title>
 <link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://kt3k.org/kt3k.jpg" />
+<link rel="icon" href="https://kt3k.github.io/kt3k.org/kt3k.jpg" />
 <style>
 body {
   font-family: 'avenir next', verdana;
@@ -17,7 +30,7 @@ body {
 }
 </style>
 
-<h1>kt3k.org <img class="avatar" src="./kt3k.jpg"/></h1>
+<h1>kt3k.org <img class="avatar" src="https://kt3k.github.io/kt3k.org/kt3k.jpg"/></h1>
 <p>Hello. I'm Yoshiya Hinosawa.
 
 <h2>About</h2>
@@ -29,7 +42,7 @@ body {
 
 <p>I've been working as a freelance JavaScript engineer since 2015. My main partners are now SEQSENSE and Lightcafe Creation (in 2019).
 
-<p>I often use the id `kt3k` in several places. `kt3k` is derived from kata-tataki, a Japanese word for `shoulder massage` 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
+<p>I often use the id 'kt3k' in several places. 'kt3k' is derived from kata-tataki, a Japanese word for 'shoulder massage' 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
 
 <h2>OSS Projects</h2>
 <p>These are the main OSS projects I've been contributing to.</p>
@@ -50,4 +63,15 @@ body {
 </ul>
 
 <hr>
-<p>© 2019 Yoshiya Hinosawa
+<p>© 2021 Yoshiya Hinosawa
+`
+
+const notFound = `
+<title>kt3k.org</title>
+<link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://kt3k.github.io/kt3k.org/kt3k.jpg" />
+<h1>Not Found</h1>
+<a href="https://kt3k.org/"><img width="150" src="https://kt3k.github.io/kt3k.org/sheep.png" /></a>
+<a href="/">Back</A>
+`
