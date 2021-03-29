@@ -3,15 +3,16 @@ addEventListener("fetch", (event) => {
   console.log(pathname);
   switch (pathname) {
     case "/":
-      event.respondWith(new Response(homepage));
+      event.respondWith(new Response(homepage, { status: 200, headers: { 'content-type': 'text/html' } }));
       break;
     default:
-      event.respondWith(new Response(notFound));
+      event.respondWith(new Response(notFound, { status: 200, headers: { 'content-type': 'text/html' } }));
       break;
   }
 });
 
 const homepage = `
+<meta charset="utf-8" />
 <title>kt3k.org</title>
 <link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
