@@ -50,22 +50,20 @@ body {
 <p>These are the main OSS projects I've been contributing to.</p>
 <ul>
   <li>🦕 <a href="https://deno.land/">Deno (JavaScript runtime)</a>
-  <li>💊 <a href="https://github.com/capsidjs/capsid">Capsid (frontend framework)</a>
-  <li>💴 <a href="https://github.com/kt3k/moneybit-app">MoneyBit (mobile accounting app)</a>
-  <li>📊 <a href="https://github.com/c3js/c3">C3.js (Chart library)</a>
+  <li>💊 <a href="https://github.com/capsidjs/capsule">Capsule (frontend framework)</a>
+  <li>🌉 <a href="https://github.com/kt3k/lepont">LePont (webview <-> react-native bridge)</a>
 </ul>
 
-<h2>Some Links</h2>
+<h2>Other Links</h2>
 <ul>
   <li><a href="https://github.com/kt3k">my github</a>
   <li><a href="https://twitter.com/kt3k">my twitter</a>
-  <li><a href="https://shuho.kt3k.org">My weekly report</a>
-  <li><a href="http://kt3k.com">kt3k.com</a>
+  <li><a href="https://shuho.kt3k.org">My weeknotes</a>
   <li><a href="https://monoid.cc/">monoid</a>
 </ul>
 
 <hr>
-<p>© 2021 Yoshiya Hinosawa
+<p>© 2022 Yoshiya Hinosawa
 `;
 
 const notFound = `
