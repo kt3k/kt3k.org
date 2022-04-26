@@ -63,7 +63,7 @@ body {
 </ul>
 
 <hr>
-<p>© 2022 Yoshiya Hinosawa
+<p>© 2022 Yoshiya Hinosawa Hey
 `;
 
 const notFound = `
