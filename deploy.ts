@@ -1,13 +1,13 @@
-addEventListener("fetch", (event) => {
-  const { pathname } = new URL(event.request.url);
+import { serve } from "https://deno.land/std@0.146.0/http/server.ts";
+
+serve((req) => {
+  const { pathname } = new URL(req.url);
   console.log(pathname);
   switch (pathname) {
     case "/":
-      event.respondWith(new Response(homepage, { status: 200, headers: { 'content-type': 'text/html' } }));
-      break;
+      return new Response(homepage, { status: 200, headers: { 'content-type': 'text/html' } });
     default:
-      event.respondWith(new Response(notFound, { status: 200, headers: { 'content-type': 'text/html' } }));
-      break;
+      return new Response(notFound, { status: 200, headers: { 'content-type': 'text/html' } });
   }
 });
 
@@ -42,7 +42,9 @@ body {
 
 <p>I worked as a full stack engineer in <a href="http://gree.jp/">GREE</a> (A Japanese social gaming company) from 2012 to 2014.
 
-<p>I've been working as a freelance JavaScript engineer since 2015. My main partners are now SEQSENSE and Lightcafe Creation (in 2019).
+<p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners were CureApp, Recruit, and SEQSENSE.
+
+<p>I've been working full time at Deno Land Inc. since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various projects here.
 
 <p>I often use the id 'kt3k' in several places. 'kt3k' is derived from kata-tataki, a Japanese word for 'shoulder massage' 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
 
@@ -59,11 +61,10 @@ body {
   <li><a href="https://github.com/kt3k">my github</a>
   <li><a href="https://twitter.com/kt3k">my twitter</a>
   <li><a href="https://shuho.kt3k.org">My weeknotes</a>
-  <li><a href="https://monoid.cc/">monoid</a>
 </ul>
 
 <hr>
-<p>© 2022 Yoshiya Hinosawa Hey
+<p>© 2022 Yoshiya Hinosawa
 `;
 
 const notFound = `
