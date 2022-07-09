@@ -1,13 +1,20 @@
-import { serve } from "https://deno.land/std@0.146.0/http/server.ts";
+import { serve } from "https://deno.land/std@0.147.0/http/server.ts";
+import { contentType } from "https://deno.land/std@0.147.0/media_types/mod.ts";
+import { extname } from "https://deno.land/std@0.147.0/path/mod.ts";
 
-serve((req) => {
+serve(async (req) => {
   const { pathname } = new URL(req.url);
   console.log(pathname);
   switch (pathname) {
     case "/":
-      return new Response(homepage, { status: 200, headers: { 'content-type': 'text/html' } });
+      return new Response(homepage, { headers: { 'content-type': 'text/html' } });
+    case "/sheep.png":
+    case "/kt3k.jpg": {
+      const mime = contentType(extname(pathname));
+      return new Response((await Deno.open("." + pathname)).readable, { headers: { 'content-type': mime } });
+    }
     default:
-      return new Response(notFound, { status: 200, headers: { 'content-type': 'text/html' } });
+      return new Response(notFound, { status: 404, headers: { 'content-type': 'text/html' } });
   }
 });
 
@@ -16,7 +23,7 @@ const homepage = `
 <title>kt3k.org</title>
 <link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://kt3k.github.io/kt3k.org/kt3k.jpg" />
+<link rel="icon" href="/kt3k.jpg" />
 <style>
 body {
   font-family: 'avenir next', verdana;
@@ -32,7 +39,7 @@ body {
 }
 </style>
 
-<h1>kt3k.org <img class="avatar" src="https://kt3k.github.io/kt3k.org/kt3k.jpg"/></h1>
+<h1>kt3k.org <img class="avatar" src="/kt3k.jpg"/></h1>
 <p>Hello. I'm Yoshiya Hinosawa.
 
 <h2>About</h2>
@@ -71,8 +78,8 @@ const notFound = `
 <title>kt3k.org</title>
 <link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://kt3k.github.io/kt3k.org/kt3k.jpg" />
+<link rel="icon" href="/kt3k.jpg" />
 <h1>Not Found</h1>
-<a href="https://kt3k.org/"><img width="150" src="https://kt3k.github.io/kt3k.org/sheep.png" /></a>
+<a href="https://kt3k.org/"><img width="150" src="/sheep.png" /></a>
 <a href="/">Back</A>
 `;
