@@ -52,7 +52,7 @@ body {
 
 <p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners were CureApp, Recruit, and SEQSENSE.
 
-<p>I've been working full time at Deno Land Inc. since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various related projects.
+<p>I've been working full-time at <a href="https://deno.land/">Deno</a> since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various related projects.
 
 <p>I often use the id 'kt3k' in several places. 'kt3k' is derived from kata-tataki, a Japanese word for 'shoulder massage' 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
 
