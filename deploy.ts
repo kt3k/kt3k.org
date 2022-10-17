@@ -45,7 +45,7 @@ body {
 <h2>About</h2>
 <p>I'm a software engineer in 🇯🇵. My main programming language is JavaScript. I've published a number of <a href="https://npm.im/~kt3k">npm modules</a>. I write programs in other languages as well, like python, ruby, groovy, java, bash etc. I published some <a href="https://rubygems.org/profiles/kt3k">ruby gems</a>, <a href="http://search.maven.org/#search%7Cga%7C1%7Corg.kt3k">maven packages</a>, <a href="https://plugins.gradle.org/search?term=kt3k">gradle plugins</a>.
 
-<p>I majored Computer Science in <a href="https://en.wikipedia.org/wiki/Kyoto_University">Kyoto University</a> and graduated in 2009 with a BA degree.
+<p>I majored in Computer Science and Mathematics in <a href="https://en.wikipedia.org/wiki/Kyoto_University">Kyoto University</a> and graduated in 2009 with a BA degree.
 
 <p>I worked as a full stack engineer in <a href="http://gree.jp/">GREE</a> (A Japanese social gaming company) from 2012 to 2014.
 
