@@ -66,8 +66,8 @@ body {
 
 <h2>Other Links</h2>
 <ul>
-  <li><a href="https://github.com/kt3k">my github</a>
-  <li><a href="https://twitter.com/kt3k">my twitter</a>
+  <li><a href="https://github.com/kt3k">GitHub</a>
+  <li><a href="https://twitter.com/kt3k">Twitter</a>
   <li><a href="https://shuho.kt3k.org">My weeknotes</a>
 </ul>
 
