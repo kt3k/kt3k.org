@@ -8,6 +8,7 @@ serve(async (req) => {
   switch (pathname) {
     case "/":
       return new Response(homepage, { headers: { 'content-type': 'text/html' } });
+    case "/style.css":
     case "/sheep.png":
     case "/kt3k.jpg": {
       const mime = contentType(extname(pathname));
@@ -21,7 +22,7 @@ serve(async (req) => {
 const homepage = `
 <meta charset="utf-8" />
 <title>kt3k.org</title>
-<link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
+<link rel="stylesheet" href="/style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/kt3k.jpg" />
 <style>
@@ -51,7 +52,7 @@ body {
 
 <p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners were CureApp, Recruit, and SEQSENSE.
 
-<p>I've been working full time at Deno Land Inc. since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various projects here.
+<p>I've been working full time at Deno Land Inc. since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various related projects.
 
 <p>I often use the id 'kt3k' in several places. 'kt3k' is derived from kata-tataki, a Japanese word for 'shoulder massage' 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
 
@@ -76,10 +77,10 @@ body {
 
 const notFound = `
 <title>kt3k.org</title>
-<link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/>
+<link rel="stylesheet" href="/style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/kt3k.jpg" />
 <h1>Not Found</h1>
-<a href="https://kt3k.org/"><img width="150" src="/sheep.png" /></a>
-<a href="/">Back</A>
+<a href="/"><img width="150" src="/sheep.png" /></a>
+<a href="/">Back</a>
 `;
