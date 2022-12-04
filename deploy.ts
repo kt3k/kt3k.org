@@ -10,6 +10,9 @@ serve(async (req) => {
       return new Response(homepage, { headers: { 'content-type': 'text/html' } });
     case "/style.css":
     case "/sheep.png":
+    case "/logo.svg":
+    case "/logo-b.svg":
+    case "/logo-w.svg":
     case "/kt3k.jpg": {
       const mime = contentType(extname(pathname));
       return new Response((await Deno.open("." + pathname)).readable, { headers: { 'content-type': mime } });
@@ -24,7 +27,7 @@ const homepage = `
 <title>kt3k.org</title>
 <link rel="stylesheet" href="/style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/kt3k.jpg" />
+<link rel="icon" href="/logo-w.svg" />
 <style>
 body {
   font-family: 'avenir next', verdana;
@@ -38,9 +41,20 @@ body {
   margin-bottom: -12px;
   margin-left: 10px;
 }
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap-4 {
+  gap: 16px;
+}
 </style>
 
-<h1>kt3k.org <img class="avatar" src="/kt3k.jpg"/></h1>
+<h1 class="flex items-center gap-4"><img src="logo.svg" width="20"><span>kt3k.org</span></h1>
+<p><img class="avatar" src="/kt3k.jpg"/>
 <p>Hello. I'm Yoshiya Hinosawa.
 
 <h2>About</h2>
