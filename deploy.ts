@@ -11,6 +11,7 @@ serve(async (req) => {
     case "/style.css":
     case "/sheep.png":
     case "/logo.svg":
+    case "/logo-e3e9f0.svg":
     case "/logo-b.svg":
     case "/logo-w.svg":
     case "/kt3k.jpg": {
@@ -53,7 +54,7 @@ body {
 }
 </style>
 
-<h1 class="flex items-center gap-4"><img src="logo.svg" width="20"><span>kt3k.org</span></h1>
+<h1 class="flex items-center gap-4"><img src="logo-e3e9f0.svg" width="20"><span>kt3k.org</span></h1>
 <p><img class="avatar" src="/kt3k.jpg"/>
 <p>Hello. I'm Yoshiya Hinosawa.
 
