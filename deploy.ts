@@ -28,7 +28,7 @@ const homepage = `
 <title>kt3k.org</title>
 <link rel="stylesheet" href="/style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/logo-w.svg" />
+<link rel="icon" href="/logo.svg" />
 <style>
 body {
   font-family: 'avenir next', verdana;
