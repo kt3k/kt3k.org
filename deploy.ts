@@ -10,10 +10,8 @@ serve(async (req) => {
       return new Response(homepage, { headers: { 'content-type': 'text/html' } });
     case "/style.css":
     case "/sheep.png":
-    case "/logo.svg":
     case "/logo-e3e9f0.svg":
-    case "/logo-b.svg":
-    case "/logo-w.svg":
+    case "/logo-square-white.png":
     case "/kt3k.jpg": {
       const mime = contentType(extname(pathname));
       return new Response((await Deno.open("." + pathname)).readable, { headers: { 'content-type': mime } });
@@ -24,11 +22,12 @@ serve(async (req) => {
 });
 
 const homepage = `
+<head>
 <meta charset="utf-8" />
 <title>kt3k.org</title>
-<link rel="stylesheet" href="/style.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/logo.svg" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="icon" href="/logo-square-white.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 body {
   font-family: 'avenir next', verdana;
@@ -53,7 +52,9 @@ body {
   gap: 16px;
 }
 </style>
+</head>
 
+<body>
 <h1 class="flex items-center gap-4"><img src="logo-e3e9f0.svg" width="20"><span>kt3k.org</span></h1>
 <p><img class="avatar" src="/kt3k.jpg"/>
 <p>Hello. I'm Yoshiya Hinosawa.
@@ -88,6 +89,7 @@ body {
 
 <hr>
 <p>© 2022 Yoshiya Hinosawa
+</body>
 `;
 
 const notFound = `
