@@ -80,6 +80,11 @@ body {
   <li>🌉 <a href="https://github.com/kt3k/lepont">LePont (webview <-> react-native bridge)</a>
 </ul>
 
+<h2>Posts</h2>
+<ul>
+  <li><a href="https://kt3k.github.io/2022/">2022 wrapped</a></li>
+</ul>
+
 <h2>Other Links</h2>
 <ul>
   <li><a href="https://github.com/kt3k">GitHub</a>
