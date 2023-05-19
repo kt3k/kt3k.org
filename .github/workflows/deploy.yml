@@ -1,0 +1,28 @@
+name: Deploy
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    env: { DEPLOY_API_ENDPOINT: "https://deno-staging.com" }
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Build step
+        run: echo 1 # 📝 Update the build command(s)
+
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "sour-clam-64"
+          entrypoint: "./deploy.ts" # 📝 Update the entrypoint
