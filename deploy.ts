@@ -89,11 +89,12 @@ body {
 <ul>
   <li><a href="https://github.com/kt3k">GitHub</a>
   <li><a href="https://threads.net/@kt3k">Threads</a>
+  <li><a href="https://x.com/kt3k">X</a>
   <li><a href="https://shuho.kt3k.org">My weeknotes</a>
 </ul>
 
 <hr>
-<p>© 2022 Yoshiya Hinosawa
+<p>© 2023 Yoshiya Hinosawa
 </body>
 `;
 
