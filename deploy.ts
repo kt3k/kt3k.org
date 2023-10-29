@@ -88,6 +88,7 @@ const homepage = /* html */`
   <ul>
     <li><a href="https://github.com/kt3k">GitHub</a>
     <li><a href="https://threads.net/@kt3k">Threads</a>
+    <li><a href="https://blog.kt3k.org">Blog (Japanese)</a>
     <li><a href="https://shuho.kt3k.org">My weeknotes</a>
     <li><a href="https://times.kt3k.org">My random comments</a>
   </ul>
