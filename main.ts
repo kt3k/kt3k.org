@@ -1,5 +1,5 @@
-import { contentType } from "https://deno.land/std@0.201.0/media_types/mod.ts";
-import { extname } from "https://deno.land/std@0.201.0/path/mod.ts";
+import { contentType } from "https://deno.land/std@0.201.0/media_types/content_type.ts";
+import { extname } from "https://deno.land/std@0.205.0/path/posix/extname.ts";
 
 Deno.serve(async (req) => {
   const { pathname } = new URL(req.url);
