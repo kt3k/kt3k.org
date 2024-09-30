@@ -89,13 +89,14 @@ const homepage = /* html */`
   <ul>
     <li><a href="https://github.com/kt3k">GitHub</a>
     <li><a href="https://threads.net/@kt3k">Threads</a>
+    <li><a href="https://bsky.app/profile/kt3k.org">Blue Sky</a>
     <li><a href="https://blog.kt3k.org">Blog (Japanese)</a>
     <li><a href="https://shuho.kt3k.org">My weeknotes</a>
     <li><a href="https://times.kt3k.org">My random comments</a>
   </ul>
 
   <hr>
-  <p>© 2023 Yoshiya Hinosawa
+  <p>© 2024 Yoshiya Hinosawa
 </body>
 `;
 
@@ -104,7 +105,7 @@ const notFound = /* html */ `
   <title>kt3k.org</title>
   <link rel="stylesheet" href="/style.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/kt3k.jpg" />
+  <link rel="icon" href="/hi.png" />
 <head>
 <body>
   <h1>Not Found</h1>
