@@ -10,6 +10,7 @@ Deno.serve(async (req) => {
     case "/style.css":
     case "/logo-e3e9f0.svg":
     case "/logo-square-white.png":
+    case "/hi.png":
     case "/kt3k.jpg": {
       const mime = contentType(extname(pathname));
       return new Response((await Deno.open("." + pathname)).readable, { headers: { 'content-type': mime ?? "" } });
@@ -24,7 +25,7 @@ const homepage = /* html */`
   <meta charset="utf-8" />
   <title>kt3k.org</title>
   <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" href="/logo-square-white.png" />
+  <link rel="icon" href="/hi.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -53,7 +54,7 @@ const homepage = /* html */`
 </head>
 
 <body>
-  <h1 class="flex items-center gap-4"><img src="logo-e3e9f0.svg" width="20"><span>kt3k.org</span></h1>
+  <h1 class="flex items-center gap-3"><img src="hi.png" width="40"><span>kt3k.org</span></h1>
 
   <p><img class="avatar" src="/kt3k.jpg"/>
   <p>Hello. I'm Yoshiya Hinosawa.
@@ -67,9 +68,9 @@ const homepage = /* html */`
 
   <p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners were CureApp, Recruit, and SEQSENSE.
 
-  <p>I've been working full-time at <a href="https://deno.land/">Deno</a> since January 2021. I work on Deno CLI, Deno Deploy, Deno Standard Modules, and other various related projects.
+  <p>I've been working full-time at <a href="https://deno.land/">Deno</a> since January 2021. I work on Deno Standard Library, Deno CLI, Deno Deploy, and other various related projects.
 
-  <p>I often use the id 'kt3k' in several places. 'kt3k' is derived from kata-tataki, a Japanese word for 'shoulder massage' 💆. I chose this name for the account name of a certain small online game many years ago. I didn't intended to use this name for such long time, but the friends there kept calling me by that name for long time, and it gradually became my favorite id.
+  <p>I usually use the id 'kt3k' online since 2007. It's acronym of a randomly picked Japanese word, which doesn't have a special meaning. I like this id because it's short and nobody tries to take this id on any services. So I can always use this id in every site.</p>
 
   <h2>OSS Projects</h2>
   <p>These are the main OSS projects I've been contributing to.</p>
