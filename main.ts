@@ -76,7 +76,7 @@ const homepage = /* html */`
   <p>These are the main OSS projects I've been contributing to.</p>
   <ul>
     <li>🦕 <a href="https://deno.land/">Deno (JavaScript runtime)</a>
-    <li>💊 <a href="https://github.com/capsidjs/capsule">Capsule (frontend framework)</a>
+    <li>💊 <a href="https://github.com/kt3k/cell">Cell (frontend tool, which I mainly use in my hobby projects)</a>
     <li>🌉 <a href="https://github.com/kt3k/lepont">LePont (webview <-> react-native bridge)</a>
   </ul>
 
