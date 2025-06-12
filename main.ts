@@ -66,23 +66,18 @@ const homepage = /* html */`
 
   <p>I worked as a full stack engineer in <a href="http://gree.jp/">GREE</a> (A Japanese social gaming company) from 2012 to 2014.
 
-  <p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners were CureApp, Recruit, and SEQSENSE.
+  <p>I worked as a freelance JavaScript engineer from 2015 to 2020. My main partners included CureApp, Recruit, and SEQSENSE.
 
   <p>I've been working full-time at <a href="https://deno.land/">Deno</a> since January 2021. I work on Deno Standard Library, Deno CLI, Deno Deploy, and other various related projects.
 
-  <p>I usually use the id 'kt3k' online since 2007. It's acronym of a randomly picked Japanese word, which doesn't have a special meaning. I like this id because it's short and nobody tries to take this id on any services. So I can always use this id in every site.</p>
+  <p>I often use the id 'kt3k'</p>
 
   <h2>OSS Projects</h2>
   <p>These are the main OSS projects I've been contributing to.</p>
   <ul>
-    <li>🦕 <a href="https://deno.land/">Deno (JavaScript runtime)</a>
+    <li>🦕 <a href="https://deno.land/">Deno</a>
     <li>💊 <a href="https://github.com/kt3k/cell">Cell (frontend tool, which I mainly use in my hobby projects)</a>
     <li>🌉 <a href="https://github.com/kt3k/lepont">LePont (webview <-> react-native bridge)</a>
-  </ul>
-
-  <h2>Posts</h2>
-  <ul>
-    <li><a href="https://kt3k.github.io/2022/">2022 wrapped</a></li>
   </ul>
 
   <h2>Other Links</h2>
@@ -96,7 +91,7 @@ const homepage = /* html */`
   </ul>
 
   <hr>
-  <p>© 2024 Yoshiya Hinosawa
+  <p>© 2025 Yoshiya Hinosawa
 </body>
 `;
 
