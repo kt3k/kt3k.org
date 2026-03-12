@@ -76,14 +76,13 @@ const homepage = /* html */`
   <p>These are the main OSS projects I've been contributing to.</p>
   <ul>
     <li>🦕 <a href="https://deno.land/">Deno</a>
-    <li>💊 <a href="https://github.com/kt3k/cell">Cell (frontend tool, which I mainly use in my hobby projects)</a>
+    <li>💊 <a href="https://github.com/kt3k/cell">Cell (small frontend framework)</a>
     <li>🌉 <a href="https://github.com/kt3k/lepont">LePont (webview <-> react-native bridge)</a>
   </ul>
 
   <h2>Other Links</h2>
   <ul>
     <li><a href="https://github.com/kt3k">GitHub</a>
-    <li><a href="https://threads.net/@kt3k">Threads</a>
     <li><a href="https://bsky.app/profile/kt3k.org">Blue Sky</a>
     <li><a href="https://blog.kt3k.org">Blog (Japanese)</a>
     <li><a href="https://shuho.kt3k.org">My weeknotes</a>
